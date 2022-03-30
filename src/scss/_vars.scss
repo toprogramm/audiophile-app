@@ -15,3 +15,26 @@ $bg: #f1f1f1;
   cursor: pointer;
   transition: all 0.3s;
 }
+
+%input {
+  background: #fff;
+  border: 1px solid #cfcfcf;
+  width: 290px;
+  height: 56px;
+  padding: 0px 5px 0px 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.25px;
+  color: #000;
+  outline-color: #000;
+}
+
+%radio-hidden {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: relative;
+}
