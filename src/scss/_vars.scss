@@ -1,0 +1,17 @@
+$default: #000;
+$accent: #d87d4a;
+$title: #fff;
+$bg: #f1f1f1;
+
+%btn {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  box-shadow: 0 7px 15px 0 rgba(24, 22, 22, 0.3);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}

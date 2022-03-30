@@ -1,0 +1,116 @@
+@import 'vars';
+@import 'reset';
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+  text-transform: uppercase;
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+.h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.overline {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.button_orange {
+  @extend %btn;
+  background-color: $accent;
+  color: #fff;
+  border: 2px solid transparent;
+  &:hover {
+    background-color: #fbaf85;
+  }
+}
+
+.button_white {
+  @extend %btn;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  &:hover {
+    background-color: $default;
+    color: #fff;
+  }
+}
+
+.button_arrow {
+  @extend %btn;
+  padding: 0;
+  color: $default;
+  opacity: 0.5;
+  background-color: $bg;
+  border: none;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: -20px;
+    width: 8px;
+    height: 12px;
+    background-image: url('./assets/shared/desktop/icon-arrow-right.svg');
+  }
+  &:hover {
+    color: $accent;
+  }
+}
