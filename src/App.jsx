@@ -1,57 +1,20 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Button from './components/Button';
+import Input from './components/Input';
+import Test from './components/Test';
+import Home from './components/Home/Home';
+
 import './scss/App.scss';
 
 function App() {
   return (
     <>
-      <button className="button_orange">See product</button>
-      <button className="button_white">See product</button>
-      <button className="button_arrow">Shop</button>
-
-      <div>
-        <input
-          className="input_text"
-          type="text"
-          placeholder="enter your name"
-        />
-      </div>
-
-      <div className="payment">
-        <div className="payment__title">Payment Method:</div>
-        <div className="payment__box">
-          <label className="payment__label">
-            <span className="payment__text">e-Money</span>
-            <input
-              className="payment__input"
-              type="radio"
-              name="payment"
-              placeholder="e-Money"
-            />
-            <span className="payment__radio">
-              <span></span>
-            </span>
-          </label>
-          <label className="payment__label">
-            <span className="payment__text">Cash on Delivery</span>
-            <input
-              className="payment__input"
-              type="radio"
-              name="payment"
-              checked
-            />
-            <span className="payment__radio">
-              <span></span>
-            </span>
-          </label>
-        </div>
-      </div>
-
-      <div className="number">
-        <div className="number__field">
-          <input className="product" type="number" value="1" min="1" />
-        </div>
-        <div className="number__spin minus"></div>
-        <div className="number__spin plus"></div>
-      </div>
+      <BrowserRouter>
+        <Navbar />
+        <Button>See Product</Button>
+      </BrowserRouter>
     </>
   );
 }
