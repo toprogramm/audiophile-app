@@ -12,8 +12,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Button>See Product</Button>
+        <div className="container">
+          <Navbar />
+        </div>
       </BrowserRouter>
     </>
   );
