@@ -8,12 +8,13 @@ import Speakers from './components/Speakers/Speakers';
 import Earphones from './components/Earphones/Earphones';
 import Cart from './components/Cart/Cart';
 import Footer from './components/Footer/Footer';
+import Thanks from './components/Thanks/Thanks';
 
 import './scss/App.scss';
 
 function App() {
   return (
-    <>
+    /*<>
       <BrowserRouter>
         <div className="wrapper">
           <div className="header">
@@ -40,6 +41,9 @@ function App() {
           </div>
         </div>
       </BrowserRouter>
+    </>*/
+    <>
+      <Thanks />
     </>
   );
 }
