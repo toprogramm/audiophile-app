@@ -9,11 +9,16 @@ const formText = {
   grandTotal: 'GRAND TOTAL',
   backToHome: 'BACK TO HOME',
 };
+const variables = {
+  buttonOrangeMod: 'button_orange button_orange_mod',
+};
 function Thanks() {
   return (
     <div className={styles.thanks}>
       <img className={styles.thanks__thanksIcon} src={checkout} />
-      <div className={styles.thanks__thanksForOrder}>{formText.thanks}</div>
+      <div className={styles.thanks__thanksForOrder}>
+        <div className={styles.h3}>{formText.thanks}</div>
+      </div>
       <div className={styles.thanks__emailConfirmation}>
         {formText.emailConfirmation}
       </div>
@@ -21,7 +26,7 @@ function Thanks() {
         <div className={styles.thanks__left}>Headphones</div>
         <div className={styles.thanks__right}>{formText.grandTotal}</div>
       </div>
-      <div className={styles.button_orange}>{formText.backToHome}</div>
+      <div className={variables.buttonOrangeMod}>{formText.backToHome}</div>
     </div>
   );
 }
