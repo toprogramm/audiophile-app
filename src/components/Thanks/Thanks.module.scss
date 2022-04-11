@@ -11,7 +11,6 @@ body {
 }
 
 .thanks {
-  height: auto;
   width: 540px;
   padding: 48px;
   background-color: $title;
@@ -25,17 +24,10 @@ body {
   &__thanksForOrder {
     text-align: left;
     margin-top: 33px;
-    height: 72px;
     width: 284px;
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1;
-    letter-spacing: 1.14px;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       margin-top: 23px;
       width: 263px;
-      height: 56px;
-      font-size: 24px;
     }
   }
   &__emailConfirmation {
@@ -46,7 +38,7 @@ body {
     color: $default;
     opacity: 0.5;
     word-wrap: break-word;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       width: 263px;
       margin-top: 16px;
     }
@@ -55,17 +47,10 @@ body {
     display: flex;
     margin-top: 33px;
     margin-bottom: 46px;
-    height: auto;
-    width: auto;
     border-radius: 8px;
     background-color: $bg;
     overflow: hidden;
     @media (max-width: 768px) {
-      width: 444px;
-    }
-    @media (max-width: 375px) {
-      width: auto;
-
       flex-direction: column;
     }
   }
@@ -73,23 +58,19 @@ body {
   &__left {
     width: 246px;
     padding: 24px;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       width: 263px;
-      height: 140px;
       padding-bottom: 25px;
     }
   }
 
   &__productPlace {
-    height: auto;
     width: 198px;
-    padding-bottom: 16px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #979797;
 
-    @media (max-width: 375px) {
-      height: 62px;
+    @media (max-width: 768px) {
       width: 215px;
     }
   }
@@ -97,6 +78,7 @@ body {
     height: 50px;
     width: 100%;
     display: flex;
+    margin-bottom: 16px;
   }
   &__iconPlace {
     height: 50px;
@@ -138,6 +120,9 @@ body {
     opacity: 0.3;
   }
   &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
     padding-top: 41px;
     padding-left: 24px;
@@ -145,26 +130,27 @@ body {
     text-align: left;
     background-color: $default;
     color: $title;
-    @media (max-width: 375px) {
+
+    @media (max-width: 768px) {
       height: 92px;
-      padding-top: 15px;
+      padding-bottom: 19px;
     }
   }
   &__grandTotal {
     opacity: 0.5;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       font-size: 15px;
     }
   }
   &__inDollars {
     font-size: 18px;
     font-weight: 700;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       margin-top: 8px;
     }
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     width: 327px;
     padding: 32px;
   }

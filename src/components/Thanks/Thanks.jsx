@@ -17,7 +17,7 @@ const formText = {
   qty: '1',
 };
 const variables = {
-  buttonOrangeMod: 'button_orange button_orange_mod',
+  buttonOrangeMod: 'button_orange',
 };
 
 function ThanksIcon() {
@@ -37,23 +37,29 @@ function EmailConfirmation() {
     </div>
   );
 }
-
+function Product() {
+  return (
+    <div className={styles.thanks__product}>
+      <div className={styles.thanks__iconPlace}>
+        <img className={styles.thanks__productIcon} src={markii} />
+      </div>
+      <div className={styles.thanks__aboutProduct}>
+        <div className={styles.thanks__model}>{formText.model}</div>
+        <div className={styles.thanks__cost}>$ {formText.cost}</div>
+      </div>
+      <div className={styles.thanks__qty}>x{formText.qty}</div>
+    </div>
+  );
+}
 function Total() {
   function Left() {
     return (
       <div className={styles.thanks__left}>
         <div className={styles.thanks__productPlace}>
           <div className={styles.thanks__products}>
-            <div className={styles.thanks__product}>
-              <div className={styles.thanks__iconPlace}>
-                <img className={styles.thanks__productIcon} src={markii} />
-              </div>
-              <div className={styles.thanks__aboutProduct}>
-                <div className={styles.thanks__model}>{formText.model}</div>
-                <div className={styles.thanks__cost}>$ {formText.cost}</div>
-              </div>
-              <div className={styles.thanks__qty}>x{formText.qty}</div>
-            </div>
+            <Product />
+            <Product />
+            <Product />
           </div>
         </div>
         <div src="#" className={styles.thanks__otherItems}>
